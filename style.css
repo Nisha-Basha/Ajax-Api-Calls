@@ -1,0 +1,82 @@
+nav > .nav.nav-tabs{
+    border:none;
+}
+nav > .nav a{
+    color: #fff;
+}
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link.active,
+nav > div a.nav-item.nav-link:focus
+{
+    border: none;
+    background: #02D8AA;
+    color:#fff;
+    border-radius:0;
+}
+nav > .nav a div{
+    font-size:2rem;
+}
+.tab-content .card{
+    border: none;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+.tab-content .card-body .section-name{
+    text-align: center;
+    margin-left:-40px;
+    border-radius: 50px;
+    background: #02D8AA;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+.tab-content .card .candidate-name{
+    font-weight: bold;
+    cursor:pointer;
+}
+.tab-content .card .mobile, 
+.tab-content .card .email,
+.tab-content .card .date{
+    font-size:15px;
+}
+
+#card0{
+    display:none;
+}
+#convertCard0{
+    display: none;
+}
+#allCard0{
+    display:none;
+}
+.modal .modal-content{
+    background-color: #E5E7E9;
+}
+.modal-slideout{
+    float: right;
+}
+.modal.fade .modal-dialog.modal-slideout{
+    transform:translate(100%)scale(1);
+}
+.modal.fade.show .modal-dialog.modal-slideout{
+    transform:translate(0,0);
+}
+.modal-dialog-slideout .modal-content{
+    border:none;
+}
+.modal-body{
+    background-color:white;
+}
+.genral-info{
+    border-bottom:solid rgb(206, 200, 200) 1px;
+}
+form .form-control{
+    border:none;
+}
+form .form-control:focus
+{
+   border:rgb(15, 15, 61) solid 1px;
+    box-shadow: inset 0 0 0 #ddd;
+}
+form .form-row .editable-btn{
+    display: none;
+    margin-top:1rem;
+ } 
+ 
