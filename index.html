@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Set process</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <section id="table_section" class="py-5">
+      <h3 class="text-info text-center">Data With Ajax Call</h3>
+      <div class="row my-5">
+        <div class="col-12">
+          <nav>
+            <div class="nav nav-tabs nav-fill bg-dark" role="tablist">
+              <a href="#new-lead" class="nav-item nav-link active newLead" data-toggle="tab">
+                <div class="counts-newlead text-center py-3"><strong></strong></div>
+                New Lead
+              </a>
+              <a href="#contact-future" class="nav-item nav-link contact" data-toggle="tab">
+                <div class="counts-contact text-center py-3"><strong></strong></div>
+                Contact in future
+              </a>
+              <a href="#follow-up" class="nav-item nav-link" data-toggle="tab">
+                <div class="counts-follow text-center py-3"><strong></strong></div>
+                Follow Up
+              </a>
+              <a href="#responded" class="nav-item nav-link" data-toggle="tab">
+                <div class="counts-respond text-center py-3"><strong></strong></div>
+                Responded
+              </a>
+              <a href="#favourite" class="nav-item nav-link" data-toggle="tab">
+                <div class="counts-favourite text-center py-3"><strong></strong></div>
+                Favourite
+              </a>
+              <a href="#converted" class="nav-item nav-link" data-toggle="tab">
+                <div class="counts-convert text-center py-3"><strong></strong></div>
+                Converted
+              </a>
+              <a href="#all" class="nav-item nav-link alldetail" data-toggle="tab">
+                <div class="counts-all text-center py-3"><strong></strong></div>
+                All
+              </a>
+            </div>
+          </nav>
+          <div class="tab-content py-3 px-lg-3" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="new-lead">
+              <div class="row newCardRow">
+                <div class="col-lg-4 col-md-6 col-sm-6 py-3" id="card0">
+                  <div class="card">
+                    <div class="card-body">
+                      <h6 class="section-name p-1 w-50 text-dark">New Lead</h6></a>
+                      <div class="py-3 candidate-name" data-id="1" data-toggle="modal" data-target="#view-details"><i
+                          class="fas fa-user"></i><span class="name text-dark pl-2 " id="1" data-id=" "></span></div>
+                      <div class="text-muted">
+                        <div class="pb-1"><i class="fa fa-phone"></i><span class="mobile text-dark pl-2 "></span></div>
+                        <div class="pb-1"><i class="fa fa-envelope"></i><span class="email text-dark pl-2"></span></div>
+                        <div class="pb-1"><i class="fa fa-calendar"></i><span class="date text-dark pl-2"></span></div>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                          <div class="p-3">
+                            <a href="http://facebook.com" class="text-muted">
+                              <i class="fab fa-facebook"></i>
+                            </a>
+                          </div>
+                          <div class="p-3">
+                            <a href="http://twitter.com" class="text-muted">
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                          </div>
+                          <div class="p-3">
+                            <a href="http://facebook.com" class="text-muted">
+                              <i class="fab fa-facebook"></i>
+                            </a>
+                          </div>
+                          <div class="p-3">
+                            <a href="http://instagram.com" class="text-muted">
+                              <i class="fab fa-instagram"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 py-3" id="card1" data-id=" "></div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="contact-future">
+            </div>
+            <div class="tab-pane fade" id="follow-up">
+            </div>
+            <div class="tab-pane fade" id="responded">
+            </div>
+            <div class="tab-pane fade" id="favourite">
+            </div>
+            <div class="tab-pane fade" id="converted">
+              <div class="row convertCardRow">
+                <div class="col-lg-4 col-md-6 col-sm-6 py-3" id="card0">
+                  <div class="card">
+                    <div class="card-body">
+                      <h6 class="section-name p-1 w-50">Converted</h6>
+                      <div class="py-3 candidate-name" data-toggle="modal" data-target="#view-details"><i
+                          class="fas fa-user"></i><span class="name text-dark pl-2" data-id=" "></span></div>
+                      <div class="text-muted">
+                        <h6 class="pb-1"><i class="fa fa-phone"></i><span class="mobile text-dark pl-2"></span></h6>
+                        <h6 class="pb-1"><i class="fa fa-envelope"></i><span class="email text-dark pl-2"></span></h6>
+                        <h6 class="pb-1"><i class="fa fa-calendar"></i><span class="date text-dark pl-2"></span></h6>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                          <div class="p-3">
+                            <a href="http://facebook.com" class="text-muted">
+                              <i class="fab fa-facebook"></i>
+                            </a>
+                          </div>
+                          <div class="p-3">
+                            <a href="http://twitter.com" class="text-muted">
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                          </div>
+                          <div class="p-3">
+                            <a href="http://facebook.com" class="text-muted">
+                              <i class="fab fa-facebook"></i>
+                            </a>
+                          </div>
+                          <div class="p-3">
+                            <a href="http://instagram.com" class="text-muted">
+                              <i class="fab fa-instagram"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 py-3" id="card1"></div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="all">
+              <div class="row allCardRow">
+                <div class="col-lg-4 col-md-6 col-sm-6 py-3" id="card0">
+                  <div class="card">
+                    <div class="card-body">
+                      <h6 class="section-name p-1 w-50"></h6>
+                      <div class="py-3 candidate-name" data-toggle="modal" data-target="#view-details"><i
+                          class="fas fa-user"></i><span class="name text-dark pl-2 "></span></div>
+                      <div class="text-muted">
+                        <h6 class="pb-1"><i class="fa fa-phone"></i><span class="mobile text-dark pl-2"></span></h6>
+                        <h6 class="pb-1"><i class="fa fa-envelope"></i><span class="email text-dark pl-2"></span></h6>
+                        <h6 class="pb-1"><i class="fa fa-calendar"></i><span class="date text-dark pl-2"></span></h6>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                          <div class="p-3">
+                            <a href="http://facebook.com" class="text-muted">
+                              <i class="fab fa-facebook"></i>
+                            </a>
+                          </div>
+                          <div class="p-3">
+                            <a href="http://twitter.com" class="text-muted">
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                          </div>
+                          <div class="p-3">
+                            <a href="http://facebook.com" class="text-muted">
+                              <i class="fab fa-facebook"></i>
+                            </a>
+                          </div>
+                          <div class="p-3">
+                            <a href="http://instagram.com" class="text-muted">
+                              <i class="fab fa-instagram"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 py-3" id="card1"></div>
+              </div>
+            </div>
+            <div class="modal fade" id="view-details">
+              <div class="modal-dialog modal-lg modal-slideout">
+                <div class="modal-content">
+                  <div class="modal-header">NewLead</div>
+                  <div class="modal-body m-3">
+                    <div class="modal-body-bg">
+                      <h5 class="text-muted pb-3 mb-5 genral-info"><em>General Information</em></h5>
+                      <form class="">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="form-row pb-4">
+                              <label class="col-lg-6 col-form-label">Company Name</label>
+                              <input type="text" class="form-control col-lg-6 in-company-name" placeholder="Empty">
+                              <div class="ml-auto editable-btn">
+                                <button type="button" class="btn btn-success save-btn"><i
+                                    class="fa fa-check"></i></button>
+                                <button type="button" class="btn btn-danger close-btn"><i
+                                    class="fa fa-times"></i></button>
+                              </div>
+                            </div>
+                            <div class="form-row pb-4">
+                              <label class="col-lg-6 col-form-label">Name</label>
+                              <input type="text" class="form-control col-lg-6 in-name" placeholder="Empty">
+                            </div>
+                            <div class="form-row pb-4">
+                              <label class="col-lg-6 col-form-label">Mobile Number</label>
+                              <input type="text" class="form-control col-lg-6 in-mobile" placeholder="empty">
+                            </div>
+                            <div class="form-row pb-4">
+                              <label class="col-lg-6 col-form-label">Tax Number</label>
+                              <input type="text" class="form-control col-lg-6 in-tax-no" placeholder="Empty">
+                            </div>
+                            <div class="form-row pb-4">
+                              <label class="col-lg-6 col-form-label" for="name">Gst Number</label>
+                              <input type="text" class="form-control col-lg-6 in-gst-no" placeholder="Empty">
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-row pb-4">
+                              <label class="col-lg-6 col-form-label" for="name">Salutation</label>
+                              <input type="text" class="form-control col-lg-6 in-salutation" placeholder="Empty">
+                            </div>
+                            <div class="form-row pb-4">
+                              <label class="col-lg-6 col-form-label" for="name">Designation</label>
+                              <input type="text" class="form-control col-lg-6 in-designation" placeholder="Empty">
+                            </div>
+                            <div class="form-row pb-4">
+                              <label class="col-lg-6 col-form-label" for="name">Email</label>
+                              <input type="text" class="form-control col-lg-6 in-email" placeholder="Empty">
+                            </div>
+                            <div class="form-row pb-4">
+                              <label class="col-lg-6 col-form-label" for="name">Pan Number</label>
+                              <input type="text" class="form-control col-lg-6 in-pan-no" placeholder="Empty">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <label class="col-12 col-form-label">About</label>
+                          <textarea cols="" rows="1" placeholder="empty" class="form-control col-12 expand"></textarea>
+                        </div>
+                        <div class="row pt-5">
+                          <div class="col-lg-6">
+                            <div class="form-row pb-4">
+                              <label class="col-lg-6 col-form-label" for="name">Turn Over(Revenue)</label>
+                              <input type="text" class="form-control col-lg-6 in-revenue" placeholder="Empty">
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-row pb-4">
+                              <label class="col-lg-6 col-form-label" for="name">Number of Employees</label>
+                              <input type="text" class="form-control col-lg-6" placeholder="Empty">
+                            </div>
+                          </div>
+                        </div>
+                        <h6 class="social-media">Social Media</h6>
+                        <div class="form-row pb-2">
+                          <label class="col-lg-12 col-form-label pb-3" for="name">Linkedin Url</label>
+                          <input type="text" class="form-control col-lg-12" placeholder="Empty">
+                        </div>
+                        <div class="form-row pb-2">
+                          <label class="col-lg-12 col-form-label pb-3" for="name">Facebook Url</label>
+                          <input type="text" class="form-control col-lg-12" placeholder="Empty">
+                        </div>
+                        <div class="form-row">
+                          <label class="col-lg-12 col-form-label pb-3" for="name">Twitter Url</label>
+                          <input type="text" class="form-control col-lg-12" placeholder="Empty">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <!-- <button class="btn btn-info ">Save</button> -->
+                    <button class="btn btn-danger close-btn" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="js/app.js">
+  </script>
+
+</body>
+
+</html>
